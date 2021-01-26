@@ -18,7 +18,7 @@ sayHello();
 
 var msg = checkAge("Charles", 21);
 msg = checkAge("Abby", 27);
-msg = checkAge("James", 18);
+checkAge("James", 18);
 msg = checkAge("John", 17);
 
 //passes object 'checkAge' into condition.  
@@ -33,8 +33,8 @@ function checkAge(name, age) {
 let favoriteVeggies = ["peppers", "onions", "green beans", "artichokes", "cabbage", "spinach"];
 
 //Loop to console log all members of array 'favoriteVeggies'
-for (let i of favoriteVeggies) {
-    console.log(i);
+for (i = 0; i< favoriteVeggies.length; i++) {
+    console.log(favoriteVeggies[i])
 };
 
 //Object 'pet', with properties 'dogName' and 'breed'
